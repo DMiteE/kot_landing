@@ -3,8 +3,8 @@ const modalBtn = document.querySelector('[data-modal]'),
       modald = document.querySelector('.modal_dialog'),
       modalCloseBtn = document.querySelector('[data-close]');
 
-const TOKEN = "6112289360:AAFmj8qe0R9fmO2InO0Yw19__rqTd3H4ncU",
-      CHAT_ID = "-1001705979712",
+const TOKEN = "",
+      CHAT_ID = "",
       URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
 function closemodal(){
