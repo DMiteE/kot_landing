@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка заявки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/task.css">
+</head>
+<body>
+    <form class="query_form" action="">
+        <h1 class="form__title">Создание заявки</h1>
+        <div class="form__group">
+            <input type="text" class="form__input" id="name" placeholder=" ">
+            <label for="" class="form__label">Название заявки</label>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__input" id="discription"  placeholder=" ">
+            <label for="" class="form__label">Описание проблемы</label>
+        </div>
+        
+            <div class="select">
+                <select name="format" id="format">
+                    <option selected disabled>Выберети сроки заявки</option>
+                    <option value="red">Срочно</option> 
+                    <option value="orange">Как можно скорее</option>
+                    <option value="yelow">Может подождать</option>
+                   </select>
+            </div>
+            
+            <button class="form__buttom" id="button">Отправить</button>
+
+    </form>
+</body>
+</html>

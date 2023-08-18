@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/adaptive.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h1>КОТ</h1>
+        </div>
+        <div class="header__logor">
+            <p>{Комплексное<br>обслуживание<br>техники}</p>
+        </div>
+        <div  class="header__menu">
+            <ul>
+                <li><a>Расчитать</a></li>
+                <li><a>О нас</a></li>
+                <li><a>Отзывы</a></li>
+                <li><a>Контакты</a></li>
+            </ul>
+        </div>
+        <button class="btn__login">Войти</button>
+        <img class="hamburger" src="/Logos/Hamburger Menu.svg" alt="">
+    </header>
+
+    <main>
+        <div class="overlay"></div>
+        <div class="conteiner">
+
+            <div class="main__text">
+                <h1>Обcлуживание компьютеров <br>
+                      для организаций</h1>
+            </div>
+                    <form class="form__calc">
+                        <div class="info_form">
+                            <h2>Абонентское обслуживание</h2>
+                            <h4>Преимущества перед штатным сотрудником:</h4>
+                            <ul class="bonus__list">
+                                <li class="bonus__item">
+                                    Выгоднее
+                                    <span>Не надо платить полную зарплату за нерегулярные задачи</span>
+                                </li>
+                                <li class="bonus__item">
+                                    Надежнее
+                                    <span>Опытная команда быстрее найдет оптимальное решение</span>
+                                </li>
+                                <li class="bonus__item">
+                                    Всегда на связи
+                                    <span>Ваша работа не прервется из-за  отпусков и больничных</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 50rem;">
+                          <div class="card-header" ><h2>Узнать стоимость в месяц</h2></div>
+                          <div class="card-body">
+                            <h3 class="card-title">Количество компьютеров : <span class="pc__output" id="pc_outcount">25</span> </h3> 
+                            <input type="range" id="countpc" class="count pccount" type="number" name="PC" min="1" max="150" value="25" step="1" list="markers_pc">
+                    
+                            <datalist id="markers_pc">
+                                <option value="1">1</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="75">75</option>
+                                <option value="100">100</option>
+                                <option value="125">125</option>
+                                <option value="150">150</option>
+                              </datalist>
+                              
+                              <h3 class="card-title">Количество серверов : <span class="ser__output" id="ser_outcount">0</span> </h3> 
+                            <input type="range" id="countser" class="count sercount" type="number" name="SER" min="0" max="25" value="0" step="1" list="markers_ser">
+                    
+                            <datalist id="markers_ser">
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                              </datalist>
+                             
+                              <div class="out">
+                                <p class="par"></p>
+                              </div>
+                            <div class="cardtext">
+                              <p class="card-text">Предварительно  <span class="price" id="price_outcount">12500</span>  руб.</p>
+                            </div>
+                            
+                          </div>
+                          <button type="button" data-modal class="btn" >Отправить заявку на обслуживание</button>
+                        </div>
+                      </form>
+        </div>
+    </main>
+
+<div class="mainlogo__container">
+    <div class="main__logo">
+        <div class="card">  
+            <img src="/img/calculator (1).png" alt=""> 
+            <h3>Прозрачная стоимость</h3>
+        </div>
+        <div class="card">  
+            <img src="/img/settings.png" alt=""> 
+            <h3 class="text__master">Мастера с опытом от 10 лет</h3>
+            </div>
+        <div class="card">   
+             <img src="/img/unlock.png" alt="">
+             <h3 class="text__garant">Гарантия качества</h3>
+            </div>
+        
+     
+    
+    </div>
+</div>
+
+    
+    <div class="discription">
+        <div class="discription_main">
+            <div class="sicription__info">
+                <div class="discription_text">
+                    <h1> КОМПАНИЯ <br>
+                        "КОТ"</h1>
+                    <p>Абонентское обслуживание компьютеров<br> это гарантия высокого качества по доступным ценам! <br> 
+                       Квалифицированное обслуживание компьютеров <br>юридических лиц в Липецке.
+                    </p>
+                    <p>
+                        Традиционно абонентское обслуживание компьютеров <br>организаций и обслуживание серверов
+                         включает в себя работы, <br>направленные на устранение аппаратных и<br>
+                         программных поломок оборудования,<br> которые осуществляет наш штат<br> сотрудников
+                         сторонней организации. Подобный подход <br>уже давно доказал свою эффективность и 
+                         позволил <br>многим организациям добиться <br>высоких успехов в развитии бизнеса.
+            
+
+                    </p>
+                </div>
+            </div>
+            <div class="sicription__info">
+                <div class="discription_text">
+                    <p>Формат сотрудничества с «КОТ» – это <br> профессиональная компьютерная помощь с <br>онлайн-мониторингом и 
+                        неограниченным <br>количеством выездов. Наши сотрудники возьмут <br> на себя как устранение неполадок техники,
+                         так и <br> модернизацию компьютерной сети, <br>настройку серверов, внедрение высокотехнологичных решений
+                    </p>
+                    
+                    <p>Мы предоставляем услуги как в плановом режиме, <br>так и по запросу, 
+                        устраняя неполадки техники, <br>настраивая серверы, внедряя новые 
+                        технологии и модернизируя<br> компьютерную сеть. Рассчитать предварительную
+                         стоимость абонентского <br>обслуживания компьютерного оборудования <br>фирм поможет
+                          калькулятор. Мы уважаем желания наших клиентов,<br> поэтому предлагаем максимально 
+                          доступные цены в соответствии <br>с выгодной системой тарификации. С нами<br> не только надежно, 
+                          но и выгодно! Более точную информацию<br> о стоимости услуг вы сможете получить у менеджеров
+                          <br> компании, обсудив все нюансы вашей информационной системы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conect__background">
+
+        <div class="conect">
+
+            <div class="conect__logo">
+                <h1>Компания КОТ</h1>
+            </div>
+
+            <div class="conect__media">
+                <img src="/Logos/Social Icons/Twitter.svg" alt="">
+                <img src="/Logos/Social Icons/LinkedIn.svg" alt="">
+                <img src="/Logos/Social Icons/Github.svg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal hide">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form  class="form_modal" id="tg">
+                    <div data-close class="modal_close">&times;</div>
+                    <div class="modal_title">Мы свяжемся в вами как можно скорее!</div>
+                    <input  placeholder="Ваше имя" type="text" name="name" class="modal_name">
+                    <input placeholder="Ваш номер телефона" type="text" name="phone" class="modal_phone">
+                    <input placeholder="Ваш телеграм" type="text" name="Telegram" class="modal_tg">
+                    <button type="submit" class="requst__button">Связаться со мной</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/modalrequest.js"></script>
+<script src="/script.js"></script>
+</html>

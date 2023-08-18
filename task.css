@@ -1,0 +1,125 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: azure;
+}
+
+
+.query_form{
+    width: 700px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    letter-spacing: 1px;
+}
+
+.form__input,
+.form__buttom {
+font-size: 16px;
+}
+.form__title{
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+.form__group{
+    position: relative;
+    margin-bottom: 32px;
+}
+.form__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.form__input{
+ width: 100%;
+ padding: 0 0 10px 0;
+ border: none;
+ border-bottom: 2px solid rgb(107, 107, 107);
+ background-color: transparent;
+ outline: none;
+ transition: 0.3s;
+}
+
+.form__input:focus {
+    border-bottom: 2px solid #2466f4c3;
+}
+
+.form__buttom{
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+    background-color: #2466f4c3;
+    outline: azure;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    margin:20px 20px 20px 0 ;
+    font-size: 16px;
+}
+
+.form__buttom:focus,
+.form__buttom:hover{
+    background-color: rgb(52, 97, 222);
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label{
+top: -18px;
+font-size: 12px;
+color: rgba(107, 107, 107, 0.742);
+}
+
+ select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background:#2466f4c3;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: azure;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background:#2466f4c3;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    color: #fff;
+    background: #2989f7;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: rgba(0,1123,240,0.7);
+ }
