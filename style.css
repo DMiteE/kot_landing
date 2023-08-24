@@ -68,7 +68,7 @@ i {
 
 
 .main__container{
-    background: url(/img/backserver.png);
+    background: url(/kot_landing/img/backserver.png);
 }
 .sliderWrapper {
     width: 800px;
@@ -216,7 +216,7 @@ i {
 
 main{
     min-height: 100vh;
-    background: url(/img/backserver.png);
+    background: url(/kot_landing/img/backserver.png);
     background-size:cover;
     background-position: center;
     
